@@ -117,29 +117,6 @@ footer {
 }
 
 
-h3 {
-  color: #A3886B;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
 
-.profile {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
-
-.profile img {
-  width: 250px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.profile-text {
-  flex: 1;
-}
 
 
