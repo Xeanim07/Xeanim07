@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f2ff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #003f5c;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFD93D;
+}
+
+.hero {
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #6DC5C9 , #6DC5D1, #3F88C5);
+    color: #020151;
+}
+
+.hero-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 2rem;
+}
+
+.texto-container {
+    max-width: 500px;
+    color: #01030D;
+}
+
+.perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 500px;
+    height: center;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* Efecto rollover del menú desplegable */
+.menu ul li:hover > ul {
+    display: block;
+}
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+    background-color: #003f5c;
+    padding: 10px;
+}
+
+.menu ul ul li {
+    display: block;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+
+footer {
+    background-color: #2f4b7c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+

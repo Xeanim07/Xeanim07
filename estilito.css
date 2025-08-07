@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f2ff;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+    background-color: #003f5c;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    color: white;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffa600;
+}
+
+
+
+/* Efecto rollover del menú desplegable */
+.menu ul li:hover > ul {
+    display: block;
+}
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+    background-color: #003f5c;
+    padding: 10px;
+}
+
+.menu ul ul li {
+    display: block;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.portafolio {
+    padding: 40px 20px;
+    background-color: #edf6ff;
+}
+
+.portafolio img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.portafolio img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #2f4b7c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
