@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,11 +14,14 @@
 <span class="menu-hamburguesa" onclick="document.querySelector('nav ul').classList.toggle('mostrar')">☰</span>
 <nav>
   <ul>
-    <li><a href="index.html">Inicio</a></li>
+    <li></li>
     <li><a href="portafolio.html">Portafolio</a></li>
     <li><a href="contacto.html">Contacto</a></li>
   </ul>
 </nav>
+
+<span class="menu-hamburguesa" onclick="document.querySelector('nav ul').classList.toggle('mostrar')">☰</span>
+
 
     <style>
         body {
@@ -31,7 +33,7 @@
         <nav class="navbar">
             <h1 class="logo">Ximena</h1>
             <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
+                <li></li>
                 <li><a href="portafolio.html">Portafolio</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -58,5 +60,29 @@
     <p>&copy; 2025 Ximena. Todos los derechos reservados.</p>
 </footer>
 	
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.querySelector(".menu-hamburguesa");
+    const navMenu = document.querySelector("nav ul");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("mostrar");
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.querySelector(".menu-hamburguesa");
+    const navMenu = document.querySelector("nav ul");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("mostrar");
+    });
+  });
+</script>
+
 </body>
 </html>
